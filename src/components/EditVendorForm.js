@@ -41,7 +41,7 @@ const EditVendorForm = ({ vendorsData,record,setEditedRecord,recordIndex,setVend
       edited.zipcode=zipcode
     }
     
-    let res = await axios.put(`http://localhost:5000/vendor/${record._id}`, edited);
+    let res = await axios.put(`https://vendor-crud-production.up.railway.app/vendor/${record._id}`, edited);
     
     if (res.status == 200 || res.status == 204) {
       console.log(recordIndex,"11111", vendorsData[recordIndex],vendorName)
