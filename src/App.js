@@ -21,7 +21,7 @@ const App = () => {
   useEffect(() => {
     fetchVendors();
   }, []);
-  // console.log(vendorsData.vendors);
+  console.log(vendorsData.vendors);
   return (
     <>
       <BrowserRouter>
