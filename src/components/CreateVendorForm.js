@@ -15,7 +15,7 @@ const CreateVendorForm = ({ vendorsData }) => {
   let [zipcode, setZipCode] = useState("");
   const { TextArea } = Input;
   let handleSubmit = async () => {
-    let res = await axios.post("https://vendor-crud-production.up.railway.app/vendor/create-vendor", {
+    let res = await axios.post("http://localhost:5000/vendor/create-vendor", {
       vendorName: vendorName,
       accountNumber: accountNumber,
       bankName: bankName,

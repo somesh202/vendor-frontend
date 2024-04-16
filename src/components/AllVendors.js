@@ -6,7 +6,7 @@ import EditVendorForm from "./EditVendorForm";
 const AllVendors = ({ vendorsData, setVendorsData }) => {
   const [editedRecord, setEditedRecord] = useState({ status: false, data: {} });
   const handleDelete = async (record) => {
-    let res = await axios.delete(`https://vendor-crud-production.up.railway.app/vendor/${record._id}`);
+    let res = await axios.delete(`http://localhost:5000/vendor/${record._id}`);
     // console.log(vendorsData.filter((o)=>{
     //   return o._id!==record._id
     // }))
